@@ -75,6 +75,21 @@ export default {
 					800: '#075985',
 					900: '#0c4a6e',
 					950: '#082f49',
+				},
+				bemi: {
+					primary: '#138B4D',    // Couleur principale
+					secondary: '#E96641',  // Couleur secondaire
+					50: '#e6f5ee',
+					100: '#ccead2',
+					200: '#99d5a6',
+					300: '#66c17a',
+					400: '#33ac4d',
+					500: '#138B4D',
+					600: '#0f7040',
+					700: '#0c5533',
+					800: '#083a26',
+					900: '#041f13',
+					950: '#020f09',
 				}
 			},
 			borderRadius: {
