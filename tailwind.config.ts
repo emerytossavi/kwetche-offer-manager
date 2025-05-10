@@ -77,19 +77,21 @@ export default {
 					950: '#082f49',
 				},
 				bemi: {
-					primary: '#138B4D',    // Couleur principale
-					secondary: '#E96641',  // Couleur secondaire
-					50: '#e6f5ee',
-					100: '#ccead2',
-					200: '#99d5a6',
-					300: '#66c17a',
-					400: '#33ac4d',
-					500: '#138B4D',
-					600: '#0f7040',
-					700: '#0c5533',
-					800: '#083a26',
-					900: '#041f13',
-					950: '#020f09',
+					primary: '#2F9359',     // New primary color
+					secondary: '#EA9538',   // New secondary color
+					transition: '#9BD1B8',  // New transition color
+					'action-transition': '#DC847C', // New action transition color
+					50: '#e8f6ee',
+					100: '#d2eedd',
+					200: '#a5ddbc',
+					300: '#78cb9a',
+					400: '#4bba79',
+					500: '#2F9359',
+					600: '#267647',
+					700: '#1d5835',
+					800: '#143b24',
+					900: '#0a1d12',
+					950: '#050f09',
 				}
 			},
 			borderRadius: {

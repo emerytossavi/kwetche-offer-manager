@@ -4,7 +4,7 @@ import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { PageHeader } from '@/components/dashboard/PageHeader';
 import { Button } from '@/components/ui/button';
 import { Link, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Upload, Plus, X, Check } from 'lucide-react';
+import { ArrowLeft, Upload, X, Check } from 'lucide-react';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
@@ -25,7 +25,6 @@ import { useToast } from '@/hooks/use-toast';
 
 export default function OffreAddPage() {
   const [image, setImage] = useState<string | null>(null);
-  const [conditions, setConditions] = useState<string[]>(['']);
   const navigate = useNavigate();
   const { toast } = useToast();
 
@@ -38,22 +37,6 @@ export default function OffreAddPage() {
       };
       reader.readAsDataURL(file);
     }
-  };
-
-  const addCondition = () => {
-    setConditions([...conditions, '']);
-  };
-
-  const updateCondition = (index: number, value: string) => {
-    const newConditions = [...conditions];
-    newConditions[index] = value;
-    setConditions(newConditions);
-  };
-
-  const removeCondition = (index: number) => {
-    const newConditions = [...conditions];
-    newConditions.splice(index, 1);
-    setConditions(newConditions);
   };
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -172,10 +155,10 @@ export default function OffreAddPage() {
           <CardContent className="pt-6">
             <div className="grid gap-6 sm:grid-cols-2">
               <div>
-                <Label htmlFor="valeur" className="text-base">Valeur en Kwetché</Label>
+                <Label htmlFor="valeur" className="text-base">Valeur en KWETCHE</Label>
                 <Input id="valeur" type="number" min="1" placeholder="Ex: 100" className="mt-1.5" />
                 <p className="text-sm text-muted-foreground mt-1">
-                  Combien de Kwetché l'utilisateur gagne-t-il avec cette offre ?
+                  Combien de KWETCHE l'utilisateur gagne-t-il avec cette offre ?
                 </p>
               </div>
               <div>
@@ -186,42 +169,6 @@ export default function OffreAddPage() {
                 </p>
               </div>
             </div>
-          </CardContent>
-        </Card>
-
-        <Card className="mb-6">
-          <CardContent className="pt-6">
-            <div className="flex items-center justify-between mb-4">
-              <Label className="text-base">Conditions d'utilisation</Label>
-              <Button type="button" variant="outline" size="sm" onClick={addCondition}>
-                <Plus className="h-4 w-4 mr-1" /> Ajouter une condition
-              </Button>
-            </div>
-            
-            <div className="space-y-3">
-              {conditions.map((condition, index) => (
-                <div key={index} className="flex items-start gap-2">
-                  <Input
-                    value={condition}
-                    onChange={(e) => updateCondition(index, e.target.value)}
-                    placeholder="Ex: Offre valable uniquement de 8h à 11h"
-                    className="flex-1"
-                  />
-                  <Button
-                    type="button"
-                    variant="ghost"
-                    size="icon"
-                    onClick={() => removeCondition(index)}
-                    disabled={conditions.length === 1}
-                  >
-                    <X className="h-4 w-4" />
-                  </Button>
-                </div>
-              ))}
-            </div>
-            <p className="text-sm text-muted-foreground mt-3">
-              Ajoutez toutes les conditions et restrictions qui s'appliquent à cette offre.
-            </p>
           </CardContent>
         </Card>
 
