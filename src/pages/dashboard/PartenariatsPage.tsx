@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { DashboardLayout } from '@/components/layout/DashboardLayout';
 import { PageHeader } from '@/components/dashboard/PageHeader';
@@ -93,6 +92,20 @@ const mockPartenaires: Partenaire[] = [
   }
 ];
 
+// Move the getStatusBadge function outside of the component so it's accessible to all components in the file
+const getStatusBadge = (status: string) => {
+  switch (status) {
+    case 'active':
+      return <Badge className="bg-green-100 text-green-800 hover:bg-green-200">Actif</Badge>;
+    case 'inactive':
+      return <Badge className="bg-gray-100 text-gray-800 hover:bg-gray-200">Inactif</Badge>;
+    case 'pending':
+      return <Badge className="bg-yellow-100 text-yellow-800 hover:bg-yellow-200">En attente</Badge>;
+    default:
+      return <Badge>Inconnu</Badge>;
+  }
+};
+
 export default function PartenariatsPage() {
   const [searchTerm, setSearchTerm] = useState('');
 
@@ -101,19 +114,6 @@ export default function PartenariatsPage() {
     partenaire.categorie.toLowerCase().includes(searchTerm.toLowerCase()) ||
     partenaire.adresse.toLowerCase().includes(searchTerm.toLowerCase())
   );
-
-  const getStatusBadge = (status: string) => {
-    switch (status) {
-      case 'active':
-        return <Badge className="bg-green-100 text-green-800 hover:bg-green-200">Actif</Badge>;
-      case 'inactive':
-        return <Badge className="bg-gray-100 text-gray-800 hover:bg-gray-200">Inactif</Badge>;
-      case 'pending':
-        return <Badge className="bg-yellow-100 text-yellow-800 hover:bg-yellow-200">En attente</Badge>;
-      default:
-        return <Badge>Inconnu</Badge>;
-    }
-  };
 
   return (
     <DashboardLayout>
