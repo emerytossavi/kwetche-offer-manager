@@ -61,13 +61,13 @@ interface Reduction {
 const mockReductions: Reduction[] = [
   {
     id: '1',
-    code: 'ETE2023',
+    code: 'EYA2025',
     description: '20% de réduction sur les offres d\'été',
     type: 'percentage',
     value: 20,
     usageLimit: 100,
     usageCount: 45,
-    expirationDate: '31/08/2023',
+    expirationDate: '31/08/2025',
     status: 'active'
   },
   {
@@ -78,7 +78,7 @@ const mockReductions: Reduction[] = [
     value: 10,
     usageLimit: 0,
     usageCount: 320,
-    expirationDate: '31/12/2023',
+    expirationDate: '31/12/2025',
     status: 'active'
   },
   {
@@ -89,18 +89,18 @@ const mockReductions: Reduction[] = [
     value: 50,
     usageLimit: 200,
     usageCount: 200,
-    expirationDate: '15/05/2023',
+    expirationDate: '15/05/2025',
     status: 'depleted'
   },
   {
     id: '4',
-    code: 'NOEL2022',
-    description: '15% sur les offres de décembre',
+    code: 'SIMPLETEST',
+    description: '15% sur les achats de bracelets',
     type: 'percentage',
     value: 15,
     usageLimit: 150,
     usageCount: 120,
-    expirationDate: '31/12/2022',
+    expirationDate: '31/4/2025',
     status: 'expired'
   }
 ];
@@ -167,7 +167,7 @@ export default function ReductionsPage() {
               <div className="grid gap-4 py-4">
                 <div className="grid gap-2">
                   <Label htmlFor="code">Code</Label>
-                  <Input id="code" placeholder="Ex: ETE2023" />
+                  <Input id="code" placeholder="Ex: EYA2025" />
                 </div>
                 <div className="grid gap-2">
                   <Label htmlFor="description">Description</Label>

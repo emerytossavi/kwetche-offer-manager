@@ -22,7 +22,7 @@ const mockOffres: Offre[] = [
     id: '01',
     titre: 'Café gratuit chez Coffee Shop',
     statut: 'active',
-    dateCreation: '15/04/2023',
+    dateCreation: '15/04/2025',
     valeurKwetche: 100,
     vues: 1240,
     conversions: 128
@@ -31,16 +31,16 @@ const mockOffres: Offre[] = [
     id: '02',
     titre: 'Réduction de 20% sur les pizzas',
     statut: 'active',
-    dateCreation: '22/03/2023',
+    dateCreation: '22/03/2025',
     valeurKwetche: 150,
     vues: 890,
     conversions: 96
   },
   {
     id: '03',
-    titre: 'Dessert offert pour deux plats achetés',
+    titre: '15% sur les Bracelets pour deux plats achetés',
     statut: 'inactive',
-    dateCreation: '10/03/2023',
+    dateCreation: '10/03/2025',
     valeurKwetche: 80,
     vues: 720,
     conversions: 84
@@ -49,7 +49,7 @@ const mockOffres: Offre[] = [
     id: '04',
     titre: 'Réduction de 15% sur les vêtements',
     statut: 'draft',
-    dateCreation: '05/02/2023',
+    dateCreation: '05/02/2025',
     valeurKwetche: 200,
     vues: 320,
     conversions: 45
@@ -58,7 +58,7 @@ const mockOffres: Offre[] = [
     id: '05',
     titre: 'Séance de cinéma gratuite',
     statut: 'active',
-    dateCreation: '18/01/2023',
+    dateCreation: '18/01/2025',
     valeurKwetche: 250,
     vues: 650,
     conversions: 72

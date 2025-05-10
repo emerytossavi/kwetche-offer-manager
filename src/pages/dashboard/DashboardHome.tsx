@@ -14,7 +14,7 @@ const recentActivities = [
   {
     id: '1',
     title: 'Nouvelle offre créée',
-    description: 'L\'offre "Réduction sur pizza" a été créée',
+    description: 'L\'offre "Réduction sur les tickets EYA" a été créée',
     time: 'Il y a 5 minutes',
     type: 'offre' as const,
     status: 'success' as const
@@ -22,7 +22,7 @@ const recentActivities = [
   {
     id: '2',
     title: 'Code promo ajouté',
-    description: 'Le code "ETE2023" a été ajouté à l\'offre "Réduction sur pizza"',
+    description: 'Le code "ETE2025" a été ajouté à l\'offre "Réduction sur les tickets EYA"',
     time: 'Il y a 30 minutes',
     type: 'reduction' as const,
     status: 'info' as const
@@ -55,8 +55,8 @@ const recentActivities = [
 
 const topOffres = [
   { id: '1', titre: 'Café gratuit', conversions: 128, vues: 1240 },
-  { id: '2', titre: 'Réduction sur pizza', conversions: 96, vues: 890 },
-  { id: '3', titre: 'Dessert offert', conversions: 84, vues: 720 },
+  { id: '2', titre: 'Réduction sur les tickets EYA', conversions: 96, vues: 890 },
+  { id: '3', titre: '15% sur les Bracelets', conversions: 84, vues: 720 },
 ];
 
 export default function DashboardHome() {

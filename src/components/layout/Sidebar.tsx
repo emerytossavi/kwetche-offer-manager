@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -75,7 +76,7 @@ export function Sidebar() {
 
       <aside 
         className={cn(
-          "min-h-screen h-full bg-sidebar border-r border-sidebar-border flex flex-col transition-all duration-300 ease-in-out z-50",
+          "h-screen bg-sidebar border-r border-sidebar-border flex flex-col transition-all duration-300 ease-in-out z-50",
           effectiveCollapsed 
             ? "w-16 fixed" 
             : isMobile 
@@ -87,7 +88,7 @@ export function Sidebar() {
           {!effectiveCollapsed ? (
             <div className="flex items-center">
               <img 
-                src="/lovable-uploads/591c820d-1f25-4780-a193-9671d355b8cf.png" 
+                src="/lovable-uploads/logo_bemi.png" 
                 alt="bè mi Logo" 
                 className="h-10 w-10 mr-2" 
               />
@@ -96,7 +97,7 @@ export function Sidebar() {
           ) : (
             <div className="flex items-center justify-center w-full">
               <img 
-                src="/lovable-uploads/591c820d-1f25-4780-a193-9671d355b8cf.png" 
+                src="/lovable-uploads/logo_bemi.png" 
                 alt="bè mi Logo" 
                 className="h-8 w-8" 
               />
@@ -208,8 +209,8 @@ export function Sidebar() {
                   AD
                 </div>
                 <div className="text-white">
-                  <p className="text-sm font-medium">Admin User</p>
-                  <p className="text-xs text-white/80">admin@bemi.com</p>
+                  <p className="text-sm font-medium">Promoteur - 012</p>
+                  <p className="text-xs text-white/80">promoteur.012@bemi.com</p>
                 </div>
               </div>
               <div className="flex justify-between">

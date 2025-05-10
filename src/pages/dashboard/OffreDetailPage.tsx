@@ -19,8 +19,8 @@ const offreDetails = {
   titre: 'Café gratuit chez Coffee Shop',
   description: 'Obtenez un café gratuit pour tout achat d\'un sandwich. Offre valable tous les jours de 8h à 11h.',
   statut: 'active',
-  dateCreation: '15/04/2023',
-  dateExpiration: '15/07/2023',
+  dateCreation: '15/04/2025',
+  dateExpiration: '15/07/2025',
   valeurKwetche: 100,
   vues: 1240,
   conversions: 128,
@@ -239,9 +239,9 @@ export default function OffreDetailPage() {
             <CardContent>
               <div className="space-y-4">
                 {[
-                  { date: "22/04/2023 14:30", action: "Mise à jour de l'image", user: "admin@kwetche.com" },
-                  { date: "20/04/2023 10:15", action: "Modification de la description", user: "admin@kwetche.com" },
-                  { date: "15/04/2023 09:00", action: "Création de l'offre", user: "admin@kwetche.com" }
+                  { date: "22/04/2025 14:30", action: "Mise à jour de l'image", user: "admin@bemi.com" },
+                  { date: "20/04/2025 10:15", action: "Modification de la description", user: "admin@bemi.com" },
+                  { date: "15/04/2025 09:00", action: "Création de l'offre", user: "admin@bemi.com" }
                 ].map((event, i) => (
                   <div key={i} className="relative pl-6">
                     <div className="absolute left-0 top-1.5 h-2 w-2 rounded-full bg-kwetche-600"></div>
