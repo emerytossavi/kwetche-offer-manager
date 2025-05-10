@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -76,7 +75,7 @@ export function Sidebar() {
 
       <aside 
         className={cn(
-          "h-screen bg-sidebar border-r border-sidebar-border flex flex-col transition-all duration-300 ease-in-out z-50",
+          "min-h-screen h-full bg-sidebar border-r border-sidebar-border flex flex-col transition-all duration-300 ease-in-out z-50",
           effectiveCollapsed 
             ? "w-16 fixed" 
             : isMobile 

@@ -12,11 +12,11 @@ export function DashboardLayout({ children }: DashboardLayoutProps) {
   const isMobile = useIsMobile();
 
   return (
-    <div className="min-h-screen bg-gray-50 flex">
+    <div className="min-h-screen flex bg-gray-50">
       <Sidebar />
       <main className={cn(
         "flex-1 p-6 transition-all duration-300 ease-in-out",
-        isMobile ? "ml-16" : "ml-0"
+        isMobile ? "ml-16" : "ml-64"
       )}>
         {children}
       </main>
